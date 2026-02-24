@@ -169,11 +169,12 @@ export default function App() {
                 s.emit('join-room', room)
             })
             s.on('disconnect', () => setStatus('Socket.IO desconectado'))
+
             s.on('blueprint-update', (upd) => {
                 if (upd.point) {
                     setPoints(prev => [...prev, upd.point])
                 } else if (upd.points) {
-                    setPoints([...upd.points])
+                    setPoints(prev => [...prev, ...upd.points])
                 }
             })
         }
