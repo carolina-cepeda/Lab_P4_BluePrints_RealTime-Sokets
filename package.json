@@ -10,11 +10,11 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@stomp/stompjs": "7.2.0",
+    "@stomp/stompjs": "^7.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "socket.io-client": "4.8.1",
-    "sockjs-client": "1.6.1"
+    "sockjs-client": "^1.6.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.5",
